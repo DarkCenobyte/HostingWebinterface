@@ -1,0 +1,12 @@
+{
+    "require": {
+        "nikic/fast-route": "^1.3",
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Framework\\Routes\\": "framework/routes/",
+            "Framework\\Controllers\\": "framework/controllers/"
+        }
+    }
+}
