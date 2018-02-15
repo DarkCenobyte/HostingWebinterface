@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/chart.js/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fontawesome/css" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fontawesome/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery-ui/themes" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery-ui/ui" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/jquery/src" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moment/benchmarks" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moment/locale" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moment/meteor" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moment/min" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moment/scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/select2/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/summernote/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

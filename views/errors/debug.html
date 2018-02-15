@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEBUG PAGE</title>
+</head>
+<body>
+    <div>
+        <h1>!Debug Page!</h1>
+        <p>This environment has debug enable, so you can see this details, please remaining this shouldn't be enable in production environment.<br /></p>
+        <h3>Error Code: {{ error_code }}</h3>
+        <h3>Error Messages:</h3>
+        <p>{{ error_msg }}<br /></p>
+        <h3>Stack Trace:</h3>
+        <p class="trace">
+            {{ trace }}
+            <br />
+        </p>
+    </div>
+</body>
+</html>

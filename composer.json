@@ -5,6 +5,7 @@
     },
     "autoload": {
         "psr-4" : {
+            "Framework\\Handlers\\": "framework/handlers/",
             "Framework\\Routes\\": "framework/routes/",
             "Framework\\Controllers\\": "framework/controllers/"
         }

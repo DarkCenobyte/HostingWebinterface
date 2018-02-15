@@ -2,7 +2,7 @@
 
 namespace Framework\Controllers;
 
-class SampleController extends AController
+class DashboardController extends AController
 {
     public function index(string $msg)
     {
