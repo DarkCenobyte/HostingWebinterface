@@ -110,6 +110,7 @@ class ErrorHandler
                 'error_msg'  => $ex->getMessage(),
                 'trace'      => $ex->getTraceAsString(),
             ]);
+            die(1);
         } catch (\Twig_Error $e) {
             $errCode = $e->getCode();
             echo "Fatal unhandled error. Status code: ${$errCode}.<br />";
@@ -146,6 +147,7 @@ class ErrorHandler
 
         try {
             $renderer->render("${statusCode}.html");
+            die(1);
         } catch (\Twig_Error $e) {
             echo "Fatal unhandled error. Status code: ${statusCode}.<br />";
             if (ALQO_FRAMEWORK_DEBUG) {

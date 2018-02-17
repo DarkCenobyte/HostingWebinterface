@@ -64,6 +64,7 @@ class AController
 
         try {
             $this->renderer->render($defaultViewFile, $params);
+            exit(0);
         } catch (\Twig_Error_Loader $e) {
             ErrorHandler::exceptionCatcher($e);
         } catch (\Twig_Error_Syntax $e) {

@@ -56,7 +56,7 @@ function parseBeautifulQuery(): string
 {
     $uri = $_SERVER['REQUEST_URI'];
     if ($uri === '/public/') {
-        // The apache rewriting is not enabled
+        // The apache rewriting is not enabled and no $_GET['c'] used, redirect to index page
         return '/';
     }
 
