@@ -15,19 +15,23 @@ class DashboardController extends AController
     public function __construct()
     {
         parent::__construct();
-        $this->serverData = json_decode(file_get_contents(self::SERVERINFO_FILE), true);
         if (! file_exists(self::PASSWORD_FILE)) {
             // redirect to RegisterController
         } elseif(! $_SESSION['loggedIn']) {
             // redirect to LoginController
         } else {
+            $this->serverData = json_decode(file_get_contents(self::SERVERINFO_FILE), true);
             $this->userData['userID'] = self::USER_ID;
             $this->userData['userPass'] = @file_get_contents(self::PASSWORD_FILE);
         }
     }
 
-    public function index(string $msg)
+    public function index()
     {
-        echo "Hello ${msg}";
+        $this->render([
+            'SERVERNAME' => $this->serverData['name'],
+            'SERVERHOST' => $this->serverData['host'],
+            'IP'         => $this->serverData['ip'],
+        ]);
     }
 }
