@@ -55,6 +55,10 @@ function parseQuery(): string
 function parseBeautifulQuery(): string
 {
     $uri = $_SERVER['REQUEST_URI'];
+    if ($uri === '/public/') {
+        // The apache rewriting is not enabled
+        return '/';
+    }
 
     if (false !== $pos = strpos($uri, '?')) {
         $uri = substr($uri, 0, $pos);
