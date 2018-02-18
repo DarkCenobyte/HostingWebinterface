@@ -1,7 +1,6 @@
 function registerattempt(event) {
     event.preventDefault();
-    $.post("index.php", {
-        fct: "register",
+    $.post("/register", {
         userPass: $("#password").val(),
         initialCode: $("#initialCode").val()
     },

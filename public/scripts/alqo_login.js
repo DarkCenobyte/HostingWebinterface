@@ -1,7 +1,6 @@
 function loginattempt(event) {
     event.preventDefault();
-    $.post("index.php", {
-        fct: "login",
+    $.post("/login", {
         userID: "admin",
         userPass: $("#inputPassword").val()
     },
@@ -16,7 +15,7 @@ function loginattempt(event) {
                         "showEasing": "swing",
                         "timeOut": "6000"
                     };
-                    toastr.warning('Respone: ' + data);
+                    toastr.warning('Response: ' + data);
                 }
             });
     $("#loginForm")[0].reset();

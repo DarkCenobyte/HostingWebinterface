@@ -422,9 +422,7 @@ $(document).ready(function () {
 
     function logoutattempt(event) {
         event.preventDefault();
-        $.post("index.php", {
-            fct: "logout"
-        },
+        $.post("/logout", {},
                 function (data) {
                     if (data.search("authorized") !== -1) {
                         location.reload();
