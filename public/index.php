@@ -8,7 +8,7 @@ require '../vendor/autoload.php';
 
 define('ALQO_FRAMEWORK_BASEPATH', __DIR__, false);
 
-define('ALQO_FRAMEWORK_DEBUG', false, false);
+define('ALQO_FRAMEWORK_DEBUG', false, false); // false by default
 
 define('ALQO_FRAMEWORK_CACHE_PATH', false, false); // '..' . DIRECTORY_SEPARATOR . 'cache' (relative to ALQO_FRAMEWORK_BASEPATH) ; false to disable cache
 
@@ -84,6 +84,6 @@ switch ($routeInfo[0]) {
         break;
     case FastRoute\Dispatcher::FOUND:
         list($class, $method) = explode('@', $routeInfo[1], 2);
-        call_user_func_array([new $class, $method], $routeInfo[2]);
+        call_user_func_array([new $class, $method], array_merge($_POST, $routeInfo[2]));
         break;
 }
