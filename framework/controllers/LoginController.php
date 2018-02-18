@@ -2,6 +2,8 @@
 
 namespace Framework\Controllers;
 
+use Framework\Handlers\RedirectHandler;
+
 class LoginController extends AController
 {
     const INITIAL_FILE = '/var/ALQO/_initial';
@@ -14,7 +16,7 @@ class LoginController extends AController
     {
         parent::__construct();
         if (! file_exists(self::PASSWORD_FILE)) {
-            // redirect to AuthController@showRegister
+            RedirectHandler::redirect([RegisterController::class, 'showRegister']);
         } else {
             $this->userData['userID'] = self::USER_ID;
             $this->userData['userPass'] = @file_get_contents(self::PASSWORD_FILE);
@@ -24,7 +26,7 @@ class LoginController extends AController
     public function showLogin()
     {
         if ($_SESSION['loggedIn']) {
-            // redirect to index
+            RedirectHandler::redirect([DashboardController::class, 'index']);
         } else {
             $this->render();
         }

@@ -2,6 +2,8 @@
 
 namespace Framework\Controllers;
 
+use Framework\Handlers\RedirectHandler;
+
 class DashboardController extends AController
 {
     const INITIAL_FILE = '/var/ALQO/_initial';
@@ -16,9 +18,9 @@ class DashboardController extends AController
     {
         parent::__construct();
         if (! file_exists(self::PASSWORD_FILE)) {
-            // redirect to RegisterController
+            RedirectHandler::redirect([RegisterController::class, 'showRegister']);
         } elseif(! $_SESSION['loggedIn']) {
-            // redirect to LoginController
+            RedirectHandler::redirect([LoginController::class, 'showLogin']);
         } else {
             $this->serverData = json_decode(file_get_contents(self::SERVERINFO_FILE), true);
             $this->userData['userID'] = self::USER_ID;

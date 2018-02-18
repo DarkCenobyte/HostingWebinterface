@@ -2,6 +2,9 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/framework/routes" isTestSource="false" packagePrefix="Framework\Routes\" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/handlers" isTestSource="false" packagePrefix="Framework\Handlers\" />
+      <sourceFolder url="file://$MODULE_DIR$/framework/controllers" isTestSource="false" packagePrefix="Framework\Controllers\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/css" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/fonts" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bootstrap/js" />

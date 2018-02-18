@@ -57,13 +57,17 @@ class AController
                 preg_replace(
                     '/Controller$/',
                     '',
-                    get_class($this)
+                    str_replace(
+                        'Framework\\Controllers\\',
+                        '',
+                        get_class($this)
+                    )
                 )) . '.html'
             ;
         };
 
         try {
-            $this->renderer->render($defaultViewFile, $params);
+            echo $this->renderer->render($defaultViewFile(), $params);
             exit(0);
         } catch (\Twig_Error_Loader $e) {
             ErrorHandler::exceptionCatcher($e);
@@ -72,5 +76,25 @@ class AController
         } catch (\Twig_Error_Runtime $e) {
             ErrorHandler::exceptionCatcher($e);
         };
+    }
+
+    protected function renderTemplate(string $templatePath, array $params = [], bool $echoing = true)
+    {
+        try {
+            if ($echoing) {
+                echo $this->renderer->render($templatePath, $params);
+                exit(0);
+            } else {
+                return $this->renderer->render($templatePath, $params);
+            }
+        } catch (\Twig_Error_Loader $e) {
+            ErrorHandler::exceptionCatcher($e);
+        } catch (\Twig_Error_Syntax $e) {
+            ErrorHandler::exceptionCatcher($e);
+        } catch (\Twig_Error_Runtime $e) {
+            ErrorHandler::exceptionCatcher($e);
+        };
+
+        return null;
     }
 }
