@@ -7,7 +7,10 @@
         "psr-4" : {
             "Framework\\Handlers\\": "framework/handlers/",
             "Framework\\Routes\\": "framework/routes/",
-            "Framework\\Controllers\\": "framework/controllers/"
+            "Framework\\Controllers\\": "framework/controllers/",
+            "Framework\\Controllers\\Api\\": "framework/controllers/api/",
+            "Framework\\Controllers\\Api\\Traits\\": "framework/controllers/api/traits/",
+            "Framework\\Models\\": "framework/models/"
         }
     }
 }

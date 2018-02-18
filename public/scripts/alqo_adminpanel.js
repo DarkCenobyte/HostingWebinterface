@@ -181,7 +181,7 @@ $(document).ready(function () {
     });
 
     function UpdateKey() {
-        var retval = $.get("ajax.php", {getPrivKey: ""}, function (data) {
+        var retval = $.get("/api/getPrivKey", {}, function (data) {
             data = reverseString(data);
             $("#sys_genkey").attr("data-key",data);            
             UpdateSysGenkey();
@@ -194,7 +194,7 @@ $(document).ready(function () {
     }
 
     function UpdateMasternodeActivity() {
-        $.get("ajax.php", {isMasternode: ""}, function (data) {
+        $.get("/api/isMasternode", {}, function (data) {
             var isEnabled = false;
             if (data == "1") {
                 isEnabled = true;
@@ -217,7 +217,7 @@ $(document).ready(function () {
     }
 
     function UpdateStakingActivity() {
-        $.get("ajax.php", {isStaking: ""}, function (data) {
+        $.get("/api/isStaking", {}, function (data) {
             if (data == "1")
                 $("#sys_staking").html("enabled");
             else if (data == "0")
@@ -230,18 +230,18 @@ $(document).ready(function () {
 
     function setMasternodeEnable(enabled) {
         if (enabled)
-            $.get("ajax.php", {setMasternode: "1"}, function (data) {
+            $.post("/api/setMasternode", {setMasternode: "1"}, function (data) {
             });
         else
-            $.get("ajax.php", {setMasternode: "0"}, function (data) {
+            $.post("/api/setMasternode", {setMasternode: "0"}, function (data) {
             });
     }
     function setStakingEnable(enabled) {
         if (enabled)
-            $.get("ajax.php", {setStaking: "1"}, function (data) {
+            $.post("/api/setStaking", {setStaking: "1"}, function (data) {
             });
         else
-            $.get("ajax.php", {setStaking: "0"}, function (data) {
+            $.post("/api/setStaking", {setStaking: "0"}, function (data) {
             });
     }
     function restartDaemon() {
@@ -253,7 +253,7 @@ $(document).ready(function () {
             "timeOut": "20000"
         };
         toastr.warning("Daemon restarting intiated. Please wait.");
-        $.get("ajax.php", {restartDaemon: ""}, function (data) {
+        $.get("/api/restartDaemon", {}, function (data) {
             toastr.options = {
                 "positionClass": "toast-top-right",
                 "closeButton": false,
@@ -268,8 +268,8 @@ $(document).ready(function () {
         });
     }
     function setPrivKey(key) {
-        $.get("ajax.php", {setPrivKey: key}, function (data) {
-            $.get("ajax.php", {getPrivKey: ""}, function (data) {
+        $.post("/api/setPrivKey", {setPrivKey: key}, function (data) {
+            $.get("/api/getPrivKey", {}, function (data) {
                 plsRestartDaemon();
                 $("#mnKeyInput").val(data);
                 $("#sys_genkey").html(data);
@@ -278,7 +278,7 @@ $(document).ready(function () {
     }
 
     function UpdateRAMandCPU() {
-        $.get("ajax.php", {serverresources: ""}, function (data) {
+        $.get("/api/serverResource", {}, function (data) {
             var tmpJSON = JSON.parse(data);
             strRamUsageMB = tmpJSON.RAMUSAGE;
             ramUsagePercentageArr = tmpJSON.RAMUSAGEPERCENTAGE;
@@ -293,7 +293,7 @@ $(document).ready(function () {
         });
     }
     function UpdateINFO() {
-        $.get("ajax.php", {info: ""}, function (data) {
+        $.get("/api/info", {}, function (data) {
             var tmpJSON = JSON.parse(data);
             strDaemonStatus = tmpJSON.status;
             strMasternodeStatus = tmpJSON.masternodeStatus;
@@ -387,7 +387,7 @@ $(document).ready(function () {
             $("#transactionTable").html(tmpString);
 
         });
-        $.get("ajax.php", {sysinfo: ""}, function (data) {
+        $.get("/api/sysinfo", {}, function (data) {
             var tmpJSON = JSON.parse(data);
             strSysInfoName = tmpJSON.name;
             strSysInfoVersion = tmpJSON.version;

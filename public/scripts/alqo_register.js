@@ -53,7 +53,11 @@ $(document).ready(function () {
         }
 
         jQuery.ajax({
-            url: 'ajax.php?initialCode=' + $("#initialCode").val(),
+            url: '/api/initialCode',
+            method: 'POST',
+            data: {
+                'initialCode': $("#initialCode").val()
+            },
             success: function (result) {
                 console.log(result);
                 if (result == "false") {

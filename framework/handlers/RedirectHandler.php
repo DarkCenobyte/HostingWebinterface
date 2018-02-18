@@ -36,6 +36,7 @@ class RedirectHandler
      * Redirect the client browser to another URL
      *
      * @param string $url
+     * @param bool $isAbsolute
      */
     public static function httpRedirect(string $url, bool $isAbsolute = false)
     {

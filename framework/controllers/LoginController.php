@@ -3,6 +3,7 @@
 namespace Framework\Controllers;
 
 use Framework\Handlers\RedirectHandler;
+use Framework\Models\UserData;
 
 class LoginController extends AController
 {
@@ -15,12 +16,11 @@ class LoginController extends AController
     public function __construct()
     {
         parent::__construct();
-        if (! file_exists(self::PASSWORD_FILE)) {
+        if (! UserData::isUserExist()) {
             //RedirectHandler::redirect([RegisterController::class, 'showRegister']);
             RedirectHandler::httpRedirect('/register');
         } else {
-            $this->userData['userID'] = self::USER_ID;
-            $this->userData['userPass'] = @file_get_contents(self::PASSWORD_FILE);
+            $this->userData = (new UserData())->getUserData();
         }
     }
 

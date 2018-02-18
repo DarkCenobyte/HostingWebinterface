@@ -3,13 +3,12 @@
 namespace Framework\Controllers;
 
 use Framework\Handlers\RedirectHandler;
+use Framework\Models\ServerData;
+use Framework\Models\UserData;
 
 class DashboardController extends AController
 {
     const INITIAL_FILE = '/var/ALQO/_initial';
-    const PASSWORD_FILE = '/var/ALQO/_webinterface_pw';
-    const SERVERINFO_FILE = '/var/ALQO/_serverinfo';
-    const USER_ID = 'admin';
 
     private $serverData;
     private $userData;
@@ -17,16 +16,15 @@ class DashboardController extends AController
     public function __construct()
     {
         parent::__construct();
-        if (! file_exists(self::PASSWORD_FILE)) {
+        if (! UserData::isUserExist()) {
             //RedirectHandler::redirect([RegisterController::class, 'showRegister']);
             RedirectHandler::httpRedirect('/register');
-        } elseif(! $_SESSION['loggedIn']) {
+        } elseif(! UserData::isUserLoggedIn()) {
             //RedirectHandler::redirect([LoginController::class, 'showLogin']);
             RedirectHandler::httpRedirect('/login');
         } else {
-            $this->serverData = json_decode(file_get_contents(self::SERVERINFO_FILE), true);
-            $this->userData['userID'] = self::USER_ID;
-            $this->userData['userPass'] = @file_get_contents(self::PASSWORD_FILE);
+            $this->serverData = (new ServerData())->getServerData();
+            $this->userData = (new UserData())->getUserData();
         }
     }
 

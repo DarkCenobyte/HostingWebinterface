@@ -78,6 +78,14 @@ class AController
         };
     }
 
+    /**
+     * Render a template manually, so you can define directly a path to a template file
+     *
+     * @param string $templatePath
+     * @param array $params
+     * @param bool $echoing
+     * @return null|string
+     */
     protected function renderTemplate(string $templatePath, array $params = [], bool $echoing = true)
     {
         try {

@@ -2,16 +2,13 @@
 
 namespace Framework\Controllers\Api;
 
-class ServerResources
+class ServerResources extends AApiController
 {
-    public function __construct()
-    {
-        //
-    }
+    const SERVER_RESOURCE_FILE = "/var/ALQO/services/data/resources";
 
-    public function generateJson(array $arr)
+    public function getServerResourcesJson()
     {
-        echo json_encode($arr);
-        die();
+        echo file_get_contents(self::SERVER_RESOURCE_FILE);
+        die(0);
     }
 }
