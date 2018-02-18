@@ -16,7 +16,8 @@ class LoginController extends AController
     {
         parent::__construct();
         if (! file_exists(self::PASSWORD_FILE)) {
-            RedirectHandler::redirect([RegisterController::class, 'showRegister']);
+            //RedirectHandler::redirect([RegisterController::class, 'showRegister']);
+            RedirectHandler::httpRedirect('/register');
         } else {
             $this->userData['userID'] = self::USER_ID;
             $this->userData['userPass'] = @file_get_contents(self::PASSWORD_FILE);
@@ -26,7 +27,8 @@ class LoginController extends AController
     public function showLogin()
     {
         if ($_SESSION['loggedIn']) {
-            RedirectHandler::redirect([DashboardController::class, 'index']);
+            //RedirectHandler::redirect([DashboardController::class, 'index']);
+            RedirectHandler::httpRedirect('/');
         } else {
             $this->render();
         }

@@ -37,9 +37,13 @@ class RedirectHandler
      *
      * @param string $url
      */
-    public static function httpRedirect(string $url)
+    public static function httpRedirect(string $url, bool $isAbsolute = false)
     {
-        header("Location: ${url}");
+        if ($isAbsolute) {
+            header("Location: ${url}");
+        } else {
+            header("Location: ${$_SERVER['HTTP_HOST']}${url}");
+        }
         die(0);
     }
 }

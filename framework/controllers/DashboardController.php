@@ -18,9 +18,11 @@ class DashboardController extends AController
     {
         parent::__construct();
         if (! file_exists(self::PASSWORD_FILE)) {
-            RedirectHandler::redirect([RegisterController::class, 'showRegister']);
+            //RedirectHandler::redirect([RegisterController::class, 'showRegister']);
+            RedirectHandler::httpRedirect('/register');
         } elseif(! $_SESSION['loggedIn']) {
-            RedirectHandler::redirect([LoginController::class, 'showLogin']);
+            //RedirectHandler::redirect([LoginController::class, 'showLogin']);
+            RedirectHandler::httpRedirect('/login');
         } else {
             $this->serverData = json_decode(file_get_contents(self::SERVERINFO_FILE), true);
             $this->userData['userID'] = self::USER_ID;
