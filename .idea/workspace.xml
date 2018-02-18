@@ -3,23 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="92c17117-894f-4bf0-a98d-f7bf6ed88dff" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/framework/ajax.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/cron.php" afterPath="$PROJECT_DIR$/backend/cron.php" />
       <change beforePath="$PROJECT_DIR$/framework/controllers/AController.php" afterPath="$PROJECT_DIR$/framework/controllers/AController.php" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/api/AApiController.php" afterPath="$PROJECT_DIR$/framework/controllers/api/AApiController.php" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/api/MasternodeInfo.php" afterPath="$PROJECT_DIR$/framework/controllers/api/MasternodeInfo.php" />
-      <change beforePath="$PROJECT_DIR$/framework/controllers/api/traits/GenerateJsonTrait.php" afterPath="$PROJECT_DIR$/framework/controllers/api/traits/GenerateJsonTrait.php" />
-      <change beforePath="$PROJECT_DIR$/framework/handlers/RedirectHandler.php" afterPath="$PROJECT_DIR$/framework/handlers/RedirectHandler.php" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/DashboardController.php" afterPath="$PROJECT_DIR$/framework/controllers/DashboardController.php" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php" afterPath="$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php" />
+      <change beforePath="$PROJECT_DIR$/framework/controllers/api/Sysinfo.php" afterPath="$PROJECT_DIR$/framework/controllers/api/Sysinfo.php" />
       <change beforePath="$PROJECT_DIR$/framework/models/DaemonData.php" afterPath="$PROJECT_DIR$/framework/models/DaemonData.php" />
       <change beforePath="$PROJECT_DIR$/framework/models/PayoutData.php" afterPath="$PROJECT_DIR$/framework/models/PayoutData.php" />
-      <change beforePath="$PROJECT_DIR$/framework/models/ServerData.php" afterPath="$PROJECT_DIR$/framework/models/ServerData.php" />
-      <change beforePath="$PROJECT_DIR$/framework/models/UserData.php" afterPath="$PROJECT_DIR$/framework/models/UserData.php" />
-      <change beforePath="$PROJECT_DIR$/framework/routes/Api.php" afterPath="$PROJECT_DIR$/framework/routes/Api.php" />
-      <change beforePath="$PROJECT_DIR$/framework/routes/Web.php" afterPath="$PROJECT_DIR$/framework/routes/Web.php" />
-      <change beforePath="$PROJECT_DIR$/public/old_index.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/views/errors/403.html" afterPath="$PROJECT_DIR$/views/errors/403.html" />
-      <change beforePath="$PROJECT_DIR$/views/errors/404.html" afterPath="$PROJECT_DIR$/views/errors/404.html" />
-      <change beforePath="$PROJECT_DIR$/views/errors/405.html" afterPath="$PROJECT_DIR$/views/errors/405.html" />
-      <change beforePath="$PROJECT_DIR$/views/errors/500.html" afterPath="$PROJECT_DIR$/views/errors/500.html" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" afterPath="$PROJECT_DIR$/public/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,18 +24,7 @@
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="74" lean-forward="true" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,7 +60,6 @@
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/framework/controllers/SampleController.php" />
-        <option value="$PROJECT_DIR$/backend/cron.php" />
         <option value="$PROJECT_DIR$/framework/controllers/AuthController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/framework/handlers/ErrorHandler.php" />
@@ -93,14 +72,10 @@
         <option value="$PROJECT_DIR$/framework/controllers/api/PayoutData.php" />
         <option value="$PROJECT_DIR$/framework/controllers/Api/AApiController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/api/ServerResources.php" />
-        <option value="$PROJECT_DIR$/framework/controllers/api/Sysinfo.php" />
-        <option value="$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php" />
         <option value="$PROJECT_DIR$/public/scripts/alqo_register.js" />
         <option value="$PROJECT_DIR$/public/scripts/alqo_adminpanel.js" />
         <option value="$PROJECT_DIR$/framework/controllers/api/InitialCode.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/framework/controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/LoginController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/api/MasternodeInfo.php" />
         <option value="$PROJECT_DIR$/views/errors/403.html" />
@@ -109,15 +84,20 @@
         <option value="$PROJECT_DIR$/views/errors/500.html" />
         <option value="$PROJECT_DIR$/framework/handlers/CsrfHandler.php" />
         <option value="$PROJECT_DIR$/framework/handlers/RedirectHandler.php" />
-        <option value="$PROJECT_DIR$/framework/controllers/AController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/api/AApiController.php" />
         <option value="$PROJECT_DIR$/framework/controllers/api/traits/GenerateJsonTrait.php" />
         <option value="$PROJECT_DIR$/framework/models/UserData.php" />
         <option value="$PROJECT_DIR$/framework/models/ServerData.php" />
-        <option value="$PROJECT_DIR$/framework/models/PayoutData.php" />
-        <option value="$PROJECT_DIR$/framework/models/DaemonData.php" />
         <option value="$PROJECT_DIR$/framework/routes/Web.php" />
         <option value="$PROJECT_DIR$/framework/routes/Api.php" />
+        <option value="$PROJECT_DIR$/backend/cron.php" />
+        <option value="$PROJECT_DIR$/framework/controllers/AController.php" />
+        <option value="$PROJECT_DIR$/framework/controllers/DashboardController.php" />
+        <option value="$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php" />
+        <option value="$PROJECT_DIR$/framework/controllers/api/Sysinfo.php" />
+        <option value="$PROJECT_DIR$/framework/models/DaemonData.php" />
+        <option value="$PROJECT_DIR$/framework/models/PayoutData.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
       </list>
     </option>
   </component>
@@ -158,6 +138,20 @@
     <option name="width" value="1855" />
     <option name="height" value="979" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>BashSupport</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -176,19 +170,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="HostingWebinterface" type="b2602c69:ProjectViewProjectNode" />
               <item name="HostingWebinterface" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HostingWebinterface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HostingWebinterface" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="HostingWebinterface" type="b2602c69:ProjectViewProjectNode" />
@@ -254,12 +241,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -314,17 +303,17 @@
       <workItem from="1518941583857" duration="6617000" />
       <workItem from="1518972700028" duration="513000" />
       <workItem from="1518973250852" duration="3391000" />
+      <workItem from="1518977937487" duration="898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58904000" />
+    <option name="totallyTimeSpent" value="59802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1857" height="987" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14716981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14716981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32927817" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -407,13 +396,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/old_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1602">
-          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/old_index.php" />
     <entry file="file://$PROJECT_DIR$/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -453,13 +436,7 @@
     <entry file="file://$PROJECT_DIR$/framework/controllers/api/GenerateJson.php" />
     <entry file="file://$PROJECT_DIR$/framework/controllers/api/DaemonData.php" />
     <entry file="file://$PROJECT_DIR$/framework/controllers/api/PayoutData.php" />
-    <entry file="file://$PROJECT_DIR$/framework/ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-467">
-          <caret line="200" column="9" lean-forward="false" selection-start-line="200" selection-start-column="9" selection-end-line="200" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/ajax.php" />
     <entry file="file://$PROJECT_DIR$/public/scripts/alqo_login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -481,14 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/cron.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="38" lean-forward="true" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -500,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -508,7 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,7 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,39 +490,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="4" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/handlers/CsrfHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/handlers/CsrfHandler.php" />
     <entry file="file://$PROJECT_DIR$/views/errors/500.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/controllers/AController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="81" column="38" lean-forward="false" selection-start-line="81" selection-start-column="38" selection-end-line="81" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -564,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -572,7 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="47">
           <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -596,15 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="16" column="90" lean-forward="false" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -612,7 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -620,7 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="882">
           <caret line="51" column="47" lean-forward="true" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -628,15 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/controllers/api/Sysinfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -648,34 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework/models/DaemonData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/models/PayoutData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/models/ServerData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -704,10 +599,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/cron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/controllers/AController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="21" column="17" lean-forward="false" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/controllers/api/DaemonSettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/controllers/api/Sysinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/models/DaemonData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/models/PayoutData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="43" lean-forward="false" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="74" lean-forward="true" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding />
         </state>
       </provider>

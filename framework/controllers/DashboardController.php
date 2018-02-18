@@ -19,7 +19,7 @@ class DashboardController extends AController
         if (! UserData::isUserExist()) {
             //RedirectHandler::redirect([RegisterController::class, 'showRegister']);
             RedirectHandler::httpRedirect('/register');
-        } elseif(! UserData::isUserLoggedIn()) {
+        } elseif (! UserData::isUserLoggedIn()) {
             //RedirectHandler::redirect([LoginController::class, 'showLogin']);
             RedirectHandler::httpRedirect('/login');
         } else {

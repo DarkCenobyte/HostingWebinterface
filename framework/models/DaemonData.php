@@ -14,31 +14,36 @@ class DaemonData
     const MASTERNODE_LIST_RANK_PATH = '/var/ALQO/services/data/masternode_list_rank';
     const MASTERNODE_STATUS = '/var/ALQO/services/data/masternode_status';
 
-    public function readInfo() {
+    public function readInfo()
+    {
         $d = file_get_contents(self::GET_INFO_PATH);
 
         return json_decode($d, true);
     }
 
-    public function readPeerInfo() {
+    public function readPeerInfo()
+    {
         $d = file_get_contents(self::GET_PEER_INFO_PATH);
 
         return json_decode($d, true);
     }
 
-    public function readMasterNodeListFull() {
+    public function readMasterNodeListFull()
+    {
         $d = file_get_contents(self::MASTERNODE_LIST_FULL_PATH);
 
         return json_decode($d, true);
     }
 
-    public function readMasterNodeListRank() {
+    public function readMasterNodeListRank()
+    {
         $d = file_get_contents(self::MASTERNODE_LIST_RANK_PATH);
 
         return json_decode($d, true);
     }
 
-    public function readMasterNodeStatus() {
+    public function readMasterNodeStatus()
+    {
         $d = file_get_contents(self::MASTERNODE_STATUS);
 
         return json_decode($d, true);

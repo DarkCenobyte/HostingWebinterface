@@ -11,9 +11,9 @@ class DaemonSettings extends AApiController
         shell_exec('sudo chmod -f 777 ' . self::DAEMON_CONFIG_FILE);
         $handle = fopen(self::DAEMON_CONFIG_FILE, "r");
         $v = "";
-        if($handle) {
-            while(($line = fgets($handle)) !== false) {
-                if(strpos($line, $c."=") !== false) {
+        if ($handle) {
+            while (($line = fgets($handle)) !== false) {
+                if (strpos($line, $c."=") !== false) {
                     $v = explode("=", $line)[1];
                     break;
                 }

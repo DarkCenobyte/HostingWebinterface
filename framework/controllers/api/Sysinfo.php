@@ -21,11 +21,11 @@ class Sysinfo extends AApiController
         preg_match_all('/=.*/', $os, $matchListVal);
         $listVal = $matchListVal[0];
 
-        array_walk($listIds, function(&$v, $k){
+        array_walk($listIds, function (&$v, $k) {
             $v = strtolower(str_replace('=', '', $v));
         });
 
-        array_walk($listVal, function(&$v, $k){
+        array_walk($listVal, function (&$v, $k) {
             $v = preg_replace('/=|"/', '', $v);
         });
 

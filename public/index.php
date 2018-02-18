@@ -27,8 +27,8 @@ $dispatcher = FastRoute\simpleDispatcher(
     function (FastRoute\RouteCollector $r) {
         \Framework\Routes\Web::getRoutes($r);
         \Framework\Routes\Api::getRoutes($r);
-    })
-;
+    }
+);
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 

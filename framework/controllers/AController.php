@@ -1,6 +1,7 @@
 <?php
 
 namespace Framework\Controllers;
+
 use Framework\Handlers\ErrorHandler;
 
 /**
@@ -62,7 +63,8 @@ class AController
                         '',
                         get_class($this)
                     )
-                )) . '.html'
+                )
+            ) . '.html'
             ;
         };
 
